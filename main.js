@@ -5,6 +5,6 @@ const sec = document.querySelector(".sec")
 
 setInterval(()=>{
     console.log(new Date().getHours(), new Date().getMinutes(), new Date().getSeconds())
-    hour.style.transform = 'rotate('+(-90 + new Date().getHours() * 30)+'deg)'
+    hour.style.transform = 'rotate('+(-90 + (new Date().getMinutes()-1)*30 + new Date().getMinutes()/60 * 30)+'deg)'
     min.style.transform = 'rotate('+(-90+ new Date().getMinutes() * 6)+'deg)'
     sec.style.transform = 'rotate('+(-90  +new Date().getSeconds() * 6)+'deg)'},100)

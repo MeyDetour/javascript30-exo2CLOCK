@@ -1,0 +1,128 @@
+html,body{
+    margin : 0 ;
+    overflow-x: hidden;
+
+}
+
+.fond{background-image: url("fond.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+}
+
+.cercle{
+    border: 15px white solid;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    padding: 15px;
+    position: relative;
+
+}
+
+.aiguille{
+
+    width: 50%;
+    position: relative;
+    top : 50% ;
+    left: 50%;
+    transform-origin: 0%;
+
+}
+
+.hour {
+    width: 35%;
+    border: 4px black solid;
+    transform: rotate(-90deg);
+}
+.min {
+    border: 3px black solid;
+    transform: rotate(-90deg);
+
+}
+.sec {
+
+    transform: rotate(-90deg);
+    border: 2px black solid;
+}
+.écriture{
+    color: white;
+    font-size: 2.5em;
+}
+.un {
+    position: absolute;
+    top: 10%;
+    left: 72%;
+}
+
+.deux {
+    position: absolute;
+    top: 26%;
+    left: 86%;
+}
+
+.trois {
+    position: absolute;
+    top: 48%;
+    left: 93%;
+}
+
+.quatre {
+    position: absolute;
+    top: 69%;
+    left: 87%;
+}
+
+.cinq {
+    position: absolute;
+    top: 86%;
+    left: 71%;
+}
+
+.six {
+    position: absolute;
+    top: 91%;
+    left: 49%;
+}
+
+.sept {
+    position: absolute;
+    top: 86%;
+    left: 27%;
+}
+
+.huit {
+    position: absolute;
+    top: 72%;
+    left: 10%;
+}
+
+.neuf {
+    position: absolute;
+    top: 48%;
+    left: 4%;
+}
+
+.dix {
+    position: absolute;
+    top: 26%;
+    left: 9%;
+}
+
+.onze {
+    position: absolute;
+    top: 9%;
+    left: 26%;
+}
+
+.douze {
+    position: absolute;
+    top: 4%;
+    left: 48%;
+}
+

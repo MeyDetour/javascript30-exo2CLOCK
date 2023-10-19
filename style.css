@@ -35,21 +35,23 @@ html,body{
     transform-origin: 0%;
 
 }
-
+.heureactuelle{
+    color: white;
+}
 .hour {
     width: 35%;
-    border: 4px black solid;
+    border: 3px white solid;
     transform: rotate(-90deg);
 }
 .min {
-    border: 3px black solid;
+    border: 3px white solid;
     transform: rotate(-90deg);
 
 }
 .sec {
 
     transform: rotate(-90deg);
-    border: 2px black solid;
+    border: 2px white solid;
 }
 .écriture{
     color: white;

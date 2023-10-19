@@ -13,10 +13,11 @@ html,body{
     justify-content: space-around;
     height: 100vh;
     width: 100vw;
+
 }
 
 .cercle{
-    border: 15px white solid;
+    border: 2px white solid;
     width: 600px;
     height: 600px;
     border-radius: 50%;
@@ -125,4 +126,69 @@ html,body{
     top: 4%;
     left: 48%;
 }
-
+.container{
+    font-size: 10px;
+    width: 40em;
+    height: 40em;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    overflow: hidden;
+    z-index: 1;
+}
+.sun{
+    position: absolute;
+    top: 15em;
+    left: 15em;
+    width: 10em;
+    height: 10em;
+    background-color: rgb(255, 204, 0);
+    border-radius: 50%;
+    box-shadow: 0 0 3em white;
+}
+.earth, .moon{
+    position: absolute;
+    border-style: solid;
+    border-color: white transparent;
+    border-width: 0.1em 0.1em 0 0;
+    border-radius: 50%;
+}
+.earth{
+    top: -3.5em;
+    left: -3.5em;
+    width: 46em;
+    height: 48em;
+    animation: rahul 36.5s linear infinite;
+}
+.moon{
+    top: 11%;
+    right: 0;
+    width: 8em;
+    height: 8em;
+    animation: rahul 10s linear infinite;
+}
+.earth::before,
+.moon::before{
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+.earth::before{
+    top: 6.8em;
+    right: 1.8em;
+    width: 5em;
+    height: 5em;
+    background-color: rgb(80, 80, 201);
+}
+.moon::before{
+    top: 0.8em;
+    right: 0.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: silver;
+}
+@keyframes rahul{
+    to{
+        transform: rotate(360deg);
+    }
+}
